@@ -363,8 +363,16 @@
     <section class="customers">
       <div class="container position-relative" data-aos="fade-up">
         <div class="arrowsDir">
-          <i class="fa-solid fa-chevron-left"></i>
-          <i class="fa-solid fa-chevron-right"></i>
+          <i
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+            class="fa-solid fa-chevron-left"
+          ></i>
+          <i
+            class="fa-solid fa-chevron-right"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          ></i>
         </div>
         <img
           src="images/Image.svg"
@@ -377,7 +385,135 @@
             <h2>What Our Customers Say About Us</h2>
           </div>
         </div>
-        <div class="row h-75 mt-5" data-aos="fade-up">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="row h-75 mt-5" data-aos="fade-up">
+                <div class="col-md-2"></div>
+                <div class="col-md-5 col-6 h-100">
+                  <div
+                    class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start darkBox position-relative"
+                  >
+                    <div class="darkBoxShadow"></div>
+                    <p class="text-light">"</p>
+                    <p class="text-light">
+                      Working with your design team was an absolute pleasure.
+                      The attention to detail and creativity exceeded my
+                      expectations. Thank you for making my home beautiful!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="circle me-3">
+                        <picture>
+                          <source srcset="images/face.webp" type="image/webp" />
+                          <img
+                            src="images/face.jpg"
+                            alt=" customer profil Picture"
+                            class="w-100"
+                          />
+                        </picture>
+                      </div>
+                      <div class="content text-light">
+                        <h5>Jems Bennett</h5>
+                        <p class="paragraph">New Yourk USA</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5 col-6 h-100">
+                  <div
+                    class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start"
+                  >
+                    <p class="text-light">"</p>
+                    <p class="text-light">
+                      Exceptional service! From the initial consultation to the
+                      final reveal, your team demonstrated professionalism and a
+                      keen eye for design. Highly recommend!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="circle me-3">
+                        <picture>
+                          <source src="images/face2.jpg" type="image/webp" />
+                          <img
+                            src="images/face2.jpg"
+                            alt="customer profil Picture"
+                            class="w-100"
+                          />
+                        </picture>
+                      </div>
+                      <div class="content text-light">
+                        <h5>Sophie Carter</h5>
+                        <p class="paragraph">London</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="row h-75 mt-5" data-aos="fade-up">
+                <div class="col-md-2"></div>
+                <div class="col-md-5 col-6 h-100">
+                  <div
+                    class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start darkBox position-relative"
+                  >
+                    <div class="darkBoxShadow"></div>
+                    <p class="text-light">"</p>
+                    <p class="text-light">
+                      Working with your design team was an absolute pleasure.
+                      The attention to detail and creativity exceeded my
+                      expectations. Thank you for making my home beautiful!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="circle me-3">
+                        <picture>
+                          <source srcset="images/face.webp" type="image/webp" />
+                          <img
+                            src="images/face.jpg"
+                            alt=" customer profil Picture"
+                            class="w-100"
+                          />
+                        </picture>
+                      </div>
+                      <div class="content text-light">
+                        <h5>Ahmed Mohamed</h5>
+                        <p class="paragraph">Cairo Egypt</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5 col-6 h-100">
+                  <div
+                    class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start"
+                  >
+                    <p class="text-light">"</p>
+                    <p class="text-light">
+                      Exceptional service! From the initial consultation to the
+                      final reveal, your team demonstrated professionalism and a
+                      keen eye for design. Highly recommend!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="circle me-3">
+                        <picture>
+                          <source src="images/face2.jpg" type="image/webp" />
+                          <img
+                            src="images/face2.jpg"
+                            alt="customer profil Picture"
+                            class="w-100"
+                          />
+                        </picture>
+                      </div>
+                      <div class="content text-light">
+                        <h5>Eman Atia</h5>
+                        <p class="paragraph">Alex Egypt</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row h-75 mt-5" data-aos="fade-up">
           <div class="col-md-2"></div>
           <div class="col-md-5 col-6 h-100">
             <div
@@ -436,7 +572,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- subscribe -->
