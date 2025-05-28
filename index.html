@@ -3,83 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Modern and elegant interior design landing page built with Bootstrap. Discover beautiful spaces and creative ideas for your home."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <title>Interior Design</title>
+    <link rel="icon" type="image/svg" href="images/Logo.svg" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- home page -->
-    <main>
-      <div class="container">
-        <div class="row">
-          <header class="d-flex justify-content-between align-items-center">
-            <div class="imageBox">
-              <img src="images/Logo.svg" alt="logo" />
-            </div>
-            <ul class="d-md-flex justify-content-between d-none">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Support</a></li>
-            </ul>
-            <button class="d-none d-md-block">Sign Up</button>
-            <button
-              class="navbar-toggler d-block d-md-none"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars fs-1"></i>
-            </button>
-            <!-- responsive offcanvas nav -->
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  <img src="images/Logo.svg" alt="" />
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Contact</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Service</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Suppoet</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </header>
+    <header
+      class="d-flex justify-content-between align-items-center container py-1"
+    >
+      <div class="imageBox">
+        <img src="images/Logo.svg" alt="logo" />
+      </div>
+      <ul class="d-md-flex justify-content-between align-items-center d-none">
+        <li><a href="#home" class="text-dark">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+      <button class="d-none d-md-block">Sign Up</button>
+      <button
+        class="navbar-toggler d-block d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars fs-1"></i>
+      </button>
+      <!-- responsive offcanvas nav -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="images/Logo.svg" alt="logo" />
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
-
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Suppoet</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="home">
         <div class="row mainSection1">
           <div
             class="col-md-8 d-flex flex-column justify-content-evenly align-items-start"
@@ -95,7 +102,10 @@
           </div>
           <div class="col-md-4 h-100 d-none d-md-block">
             <div class="imageBox">
-              <img src="images/image1.jpg" alt="" />
+              <picture>
+                <source srcset="images/image1.webp" type="image/webp" />
+                <img src="images/image1.jpg" alt="home decore" />
+              </picture>
             </div>
           </div>
         </div>
@@ -114,15 +124,15 @@
               class="d-flex justify-content-between statictics fw-medium w-100"
             >
               <li>
-                <div>400+</div>
+                <div><span id="counter1"></span>+</div>
                 <p>Project Complete</p>
               </li>
               <li>
-                <div>600+</div>
+                <div><span id="counter2"></span>+</div>
                 <p>Satisfied Clients</p>
               </li>
               <li>
-                <div>100+</div>
+                <div><span id="counter3"></span>+</div>
                 <p>Unique Styles</p>
               </li>
             </ul>
@@ -130,11 +140,14 @@
           <div class="col-md-4 h-100">
             <div class="imageBox position-relative">
               <div class="position-absolute border-1 z-n1 square"></div>
-              <img
-                src="images/Image 2.png"
-                alt="home decore"
-                class="borderImg position-relative"
-              />
+              <picture>
+                <source srcset="images/Image 2.webp" type="image/webp" />
+                <img
+                  src="images/Image 2.png"
+                  alt="home decore"
+                  class="borderImg position-relative"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -142,12 +155,12 @@
     </main>
     <!-- serives -->
     <section>
-      <div class="container my-5">
+      <div class="container my-5" id="service">
         <div class="row">
           <h2 class="subHeader position-relative">Our Services</h2>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up">
             <div class="d-flex justify-content-between align-items-start">
               <img
                 src="images/Lighting design icon.svg"
@@ -163,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up">
             <div class="d-flex justify-content-between align-items-start">
               <img
                 src="images/Interior design icon.svg"
@@ -179,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up">
             <div class="d-flex justify-content-between align-items-start">
               <img
                 src="images/Outdoor design icon.svg"
@@ -202,12 +215,15 @@
     <section class="design">
       <div class="container">
         <div class="row h-100">
-          <div class="col-md-6 h-100">
+          <div class="col-md-6 h-100" data-aos="fade-up">
             <div class="imageBox">
               <img src="images/Mask group.svg" alt="Home decore" />
             </div>
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-between">
+          <div
+            class="col-md-6 d-flex flex-column justify-content-between"
+            data-aos="fade-up"
+          >
             <h2>Designing Your Dream With Brilliance</h2>
             <p class="paragraph">
               Elevate your spaces with bespoke interior designs that reflect
@@ -279,7 +295,7 @@
           <div class="col-md-6 h-100">
             <h2 class="mb-3">Designing Your Dream in Three Simple Steps</h2>
             <div class="container-fluid">
-              <div class="row">
+              <div class="row" data-aos="fade-up">
                 <div
                   class="col-2 d-flex flex-column justify-content-start align-items-center"
                 >
@@ -297,7 +313,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" data-aos="fade-up">
                 <div
                   class="col-2 d-flex flex-column justify-content-start align-items-center"
                 >
@@ -315,7 +331,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" data-aos="fade-up">
                 <div
                   class="col-2 d-flex flex-column justify-content-start align-items-center"
                 >
@@ -345,7 +361,7 @@
     </section>
     <!-- customers -->
     <section class="customers">
-      <div class="container position-relative">
+      <div class="container position-relative" data-aos="fade-up">
         <div class="arrowsDir">
           <i class="fa-solid fa-chevron-left"></i>
           <i class="fa-solid fa-chevron-right"></i>
@@ -353,7 +369,7 @@
         <img
           src="images/Image.svg"
           alt=""
-          class="position-absolute customerbg"
+          class="position-absolute customerbg d-none d-md-block"
         />
         <div class="row">
           <div class="col-md-6"></div>
@@ -361,11 +377,11 @@
             <h2>What Our Customers Say About Us</h2>
           </div>
         </div>
-        <div class="row h-75 mt-5">
+        <div class="row h-75 mt-5" data-aos="fade-up">
           <div class="col-md-2"></div>
-          <div class="col-md-5 h-100">
+          <div class="col-md-5 col-6 h-100">
             <div
-              class="h-100 p-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start darkBox position-relative"
+              class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start darkBox position-relative"
             >
               <div class="darkBoxShadow"></div>
               <p class="text-light">"</p>
@@ -376,7 +392,14 @@
               </p>
               <div class="d-flex justify-content-between">
                 <div class="circle me-3">
-                  <img src="images/face.jpg" alt="" class="img-fluid" />
+                  <picture>
+                    <source srcset="images/face.webp" type="image/webp" />
+                    <img
+                      src="images/face.jpg"
+                      alt=" customer profil Picture"
+                      class="w-100"
+                    />
+                  </picture>
                 </div>
                 <div class="content text-light">
                   <h5>Jems Bennett</h5>
@@ -385,9 +408,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 h-100">
+          <div class="col-md-5 col-6 h-100">
             <div
-              class="h-100 p-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start"
+              class="h-100 p-1 p-md-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start"
             >
               <p class="text-light">"</p>
               <p class="text-light">
@@ -397,7 +420,14 @@
               </p>
               <div class="d-flex justify-content-between">
                 <div class="circle me-3">
-                  <img src="images/face2.jpg" alt="" class="w-100" />
+                  <picture>
+                    <source src="images/face2.jpg" type="image/webp" />
+                    <img
+                      src="images/face2.jpg"
+                      alt="customer profil Picture"
+                      class="w-100"
+                    />
+                  </picture>
                 </div>
                 <div class="content text-light">
                   <h5>Sophie Carter</h5>
@@ -411,8 +441,8 @@
     </section>
     <!-- subscribe -->
     <section>
-      <div class="container">
-        <div class="row">
+      <div class="container" id="contact">
+        <div class="row" data-aos="fade-up">
           <h2 class="text-center">
             Subscribe to Our Newsletter <br />
             for Design Insights
@@ -427,7 +457,7 @@
         </div>
       </div>
     </section>
-    <footer class="bg-dark mt-5 position-relative">
+    <footer class="bg-dark mt-5 position-relative" id="support">
       <form
         class="position-absolute p-2 w-75 d-flex justify-content-between shadow align-items-center"
       >
@@ -443,7 +473,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="imageBox h-25">
-              <img src="images/Logo 2.svg" alt="" />
+              <img src="images/Logo 2.svg" alt="logo" />
             </div>
             <p>
               VivaDecor your premier destination for luxury and modern interior
@@ -485,6 +515,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </body>
