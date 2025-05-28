@@ -16,3 +16,10 @@ function counter(counter, number) {
 counter(counter1, 400);
 counter(counter2, 600);
 counter(counter3, 100);
+// loading page
+let loading = document.getElementById("loading");
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loading.style.display = "none";
+  }, 1000);
+});
