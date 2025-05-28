@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- home page -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <header class="d-flex justify-content-between align-items-center">
+            <div class="imageBox">
+              <img src="images/Logo.svg" alt="logo" />
+            </div>
+            <ul class="d-md-flex justify-content-between d-none">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+            <button class="d-none d-md-block">Sign Up</button>
+            <button
+              class="navbar-toggler d-block d-md-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+            <!-- responsive offcanvas nav -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="images/Logo.svg" alt="" />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Service</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Suppoet</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <div class="row mainSection1">
+          <div
+            class="col-md-8 d-flex flex-column justify-content-evenly align-items-start"
+          >
+            <h1 class="fw-semibold">Interior Design</h1>
+
+            <p class="fw-medium w-md-75 lh-lg paragraph">
+              Step into a world where the art of Interior Design is meticulously
+              crafted to bring together timeless elegance and cutting-edge
+              modern Innovation, Allowing you to transform your living spaces
+              into the epitome of luxury and sophistication
+            </p>
+          </div>
+          <div class="col-md-4 h-100 d-none d-md-block">
+            <div class="imageBox">
+              <img src="images/image1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row mainSection2 position-relative">
+          <div
+            class="buttomBox position-absolute right justify-content-center align-items-center d-none d-md-flex"
+          >
+            <i class="fa-solid fa-arrow-down text-light"></i>
+          </div>
+
+          <div
+            class="col-md-7 h-100 d-flex flex-column justify-content-between align-items-start"
+          >
+            <button>Start Project</button>
+            <ul
+              class="d-flex justify-content-between statictics fw-medium w-100"
+            >
+              <li>
+                <div>400+</div>
+                <p>Project Complete</p>
+              </li>
+              <li>
+                <div>600+</div>
+                <p>Satisfied Clients</p>
+              </li>
+              <li>
+                <div>100+</div>
+                <p>Unique Styles</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 h-100">
+            <div class="imageBox position-relative">
+              <div class="position-absolute border-1 z-n1 square"></div>
+              <img
+                src="images/Image 2.png"
+                alt="home decore"
+                class="borderImg position-relative"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- serives -->
+    <section>
+      <div class="container my-5">
+        <div class="row">
+          <h2 class="subHeader position-relative">Our Services</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-start">
+              <img
+                src="images/Lighting design icon.svg"
+                alt="Lighting design icon"
+                class="icone"
+              />
+              <div class="ms-4">
+                <h5>Lighting Design</h5>
+                <p class="paragraph mt-3">
+                  Achieve the perfect balance of ambient, task, and accent
+                  lighting for a functional atmosphere
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-start">
+              <img
+                src="images/Interior design icon.svg"
+                alt="Lighting design icon"
+                class="icone"
+              />
+              <div class="ms-4">
+                <h5>Interior Design</h5>
+                <p class="paragraph mt-3">
+                  From concept to completion, we oversee every detail to bring
+                  your vision to life efficiently
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-start">
+              <img
+                src="images/Outdoor design icon.svg"
+                alt="Lighting design icon"
+                class="icone"
+              />
+              <div class="ms-4">
+                <h5>Outdoor Design</h5>
+                <p class="paragraph mt-3">
+                  Celebrate the changing seasons with our seasonal outdoor decor
+                  services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- design section -->
+    <section class="design">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-md-6 h-100">
+            <div class="imageBox">
+              <img src="images/Mask group.svg" alt="Home decore" />
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-between">
+            <h2>Designing Your Dream With Brilliance</h2>
+            <p class="paragraph">
+              Elevate your spaces with bespoke interior designs that reflect
+              your unique style and aspirations, crafted with precision and
+              brilliance for an unforgettable living experience
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Living Room Interior Design
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item’s accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Commercial Office Room Interior Design
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item’s accordion body. Let’s imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="align-self-start">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- three steps section -->
+    <section class="threeSteps">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-md-6 h-100">
+            <h2 class="mb-3">Designing Your Dream in Three Simple Steps</h2>
+            <div class="container-fluid">
+              <div class="row">
+                <div
+                  class="col-2 d-flex flex-column justify-content-start align-items-center"
+                >
+                  <div class="circle">
+                    <i class="fa-solid fa-rocket"></i>
+                  </div>
+                  <div class="verticalLine mt-2"></div>
+                </div>
+                <div class="col-10">
+                  <h5>Start Project</h5>
+                  <p class="mt-1 paragraph">
+                    Embark on your design adventure by initiating your project.
+                    Share your vision and set the stage for a bespoke design
+                    experience
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-2 d-flex flex-column justify-content-start align-items-center"
+                >
+                  <div class="circle">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+                  <div class="verticalLine mt-2"></div>
+                </div>
+                <div class="col-10">
+                  <h5>Craft</h5>
+                  <p class="mt-1 paragraph">
+                    Collaborate closely to achieve design excellence refining
+                    your vision and crafting brilliance into every aspect of
+                    your space
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-2 d-flex flex-column justify-content-start align-items-center"
+                >
+                  <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="verticalLine mt-2"></div>
+                </div>
+                <div class="col-10">
+                  <h5>Execute</h5>
+                  <p class="mt-1 paragraph">
+                    Witness your vision becoming a reality as we execute the
+                    design plan with precision. Celebrate the joy of your newly
+                    transformed space
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 h-100">
+            <div class="imageBox">
+              <img src="images/Mask group2.svg" alt="home decor" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- customers -->
+    <section class="customers">
+      <div class="container position-relative">
+        <div class="arrowsDir">
+          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <img
+          src="images/Image.svg"
+          alt=""
+          class="position-absolute customerbg"
+        />
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h2>What Our Customers Say About Us</h2>
+          </div>
+        </div>
+        <div class="row h-75 mt-5">
+          <div class="col-md-2"></div>
+          <div class="col-md-5 h-100">
+            <div
+              class="h-100 p-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start darkBox position-relative"
+            >
+              <div class="darkBoxShadow"></div>
+              <p class="text-light">"</p>
+              <p class="text-light">
+                Working with your design team was an absolute pleasure. The
+                attention to detail and creativity exceeded my expectations.
+                Thank you for making my home beautiful!
+              </p>
+              <div class="d-flex justify-content-between">
+                <div class="circle me-3">
+                  <img src="images/face.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="content text-light">
+                  <h5>Jems Bennett</h5>
+                  <p class="paragraph">Cairo Egypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 h-100">
+            <div
+              class="h-100 p-5 rounded-2 bg-dark d-flex flex-column justify-content-around align-items-start"
+            >
+              <p class="text-light">"</p>
+              <p class="text-light">
+                Exceptional service! From the initial consultation to the final
+                reveal, your team demonstrated professionalism and a keen eye
+                for design. Highly recommend!
+              </p>
+              <div class="d-flex justify-content-between">
+                <div class="circle me-3">
+                  <img src="images/face2.jpg" alt="" class="w-100" />
+                </div>
+                <div class="content text-light">
+                  <h5>Sophie Carter</h5>
+                  <p class="paragraph">Cairo Egypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">
+            Subscribe to Our Newsletter <br />
+            for Design Insights
+          </h2>
+        </div>
+        <div class="row">
+          <p class="paragraph text-center my-5">
+            Be the first to discover trends, inspirations, and special offers as
+            <br />
+            we bring the world of design directly to your inbox
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark mt-5 position-relative">
+      <form
+        class="position-absolute p-2 w-75 d-flex justify-content-between shadow align-items-center"
+      >
+        <i class="fa-solid fa-envelope text-secondary"></i>
+        <input
+          type="email"
+          class="border-0 w-100 px-3"
+          placeholder="Enter Your Email Address"
+        />
+        <button>Subscribe</button>
+      </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="imageBox h-25">
+              <img src="images/Logo 2.svg" alt="" />
+            </div>
+            <p>
+              VivaDecor your premier destination for luxury and modern interior
+              design
+            </p>
+            <div class="socialMedia">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h5>Our Services</h5>
+            <ul>
+              <li>Interior design</li>
+              <li>Outdoor design</li>
+              <li>Lightning design</li>
+              <li>Office design</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Our Services</h5>
+            <ul>
+              <li>Review</li>
+              <li>Careers</li>
+              <li>Pricign</li>
+              <li>Press inquiries</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Our Services</h5>
+            <ul>
+              <li>info@vivadecor.com</li>
+              <li>Design Avenue Cityville, CA 90210 United States</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
